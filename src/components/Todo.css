@@ -1,0 +1,136 @@
+body{
+    background-color: #ADDDD0;
+}
+.container{
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+justify-content: center;
+background-color: #ADDDD0;
+}
+h1{
+position: absolute;
+top: 10%;
+color: #fff;
+font-size: 3rem;
+letter-spacing: 1px;
+}
+form{
+    position: absolute;
+    top: 35%;
+}
+input{
+    margin-right: 20px;
+    border: 1px solid #EEEEEE;
+    border-radius: 10px;
+    outline: none;   
+    color: #111;
+    font-size: 1rem;
+    padding: 1rem;
+    width: 400px;
+}
+input::placeholder{
+    color: #111;
+}
+.btn{
+    cursor: pointer;
+    font-size: 1rem;
+    padding:1.2rem 1.5rem;
+    
+    border-radius: 10px;
+    outline: none;
+    border: 2px solid #EEEEEE;
+    color: #EEEEEE;
+    background-color: transparent;
+    transition: all 0.2s ease-in;
+}
+button:hover{
+    color: #111;
+    background-color: #EEEEEE;
+}
+
+.todo-container{
+    position: absolute;
+    top: 50%;
+    width: 50%;
+    left: 28%;
+    
+}
+.todo-list{
+    list-style-type: none;
+}
+.todo-element{
+    display: flex;
+
+}
+.todo{
+    width: 400px;
+    background-color: #EEEEEE;
+    border-radius: 10px;
+    padding: 1rem;
+    margin: 10px;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+}
+.delete-todo{
+    cursor: pointer;
+    font-size: 1rem;
+    margin: 10px;
+    padding:0.5rem 2rem;
+    border-radius: 10px;
+    outline: none;
+    border: 2px solid #EEEEEE;
+    color: #111;
+    transition: all 0.2s ease-in;
+    font-weight: bold;
+}
+.delete-todo:hover{
+    background-color: transparent;
+    color: #E14D2A;
+    border-color: #E14D2A;
+
+}
+
+@media only screen and (max-width: 600px) {
+    h1{
+        top: 0% ;
+    }
+    form{
+        display: flex;
+        flex-direction: column;
+        width: 100vw;
+        align-items: center;
+        top: 20%;
+    }
+    input{
+        width: 80%;
+        margin: 20px;
+    }
+    .btn{
+        margin: 20px;
+        width: 200px;
+        
+        
+        
+    }
+    .todo-container{
+        left: -05%;
+        width: 100%;
+        
+        margin-right: 10px;
+        margin-top: 5px;
+        padding: 10px;
+    }
+    .todo{
+        width: 70%;
+        margin-left: 0;
+        flex: 1
+    }
+    .todo-element{
+        display: flex;
+        
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
